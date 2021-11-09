@@ -9,6 +9,8 @@
 </head>
 <body>
 
+    @include('partials.header')
+    
     @yield('comics')
 
 </body>

@@ -1,0 +1,24 @@
+#index-wrapper {
+  margin: auto;
+  width: 90%;
+}
+#index-wrapper #comics-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#index-wrapper #comics-container #comic {
+  height: 350px;
+  width: 150px;
+  flex-basis: calc(25% - 20px);
+  margin: 5px 10px;
+}
+#index-wrapper #comics-container #comic img {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
