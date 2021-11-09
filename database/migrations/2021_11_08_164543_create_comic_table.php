@@ -13,14 +13,14 @@ class CreateComicTable extends Migration
      */
     public function up()
     {
-        Schema::create('comic', function (Blueprint $table) {
+        Schema::create('comics', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->text('description');
             $table->string('url_img');
             $table->float('price');
             $table->date('sale_date');
-            $table->varchar('type');
+            $table->string('type');
             $table->timestamps();
         });
     }
@@ -32,6 +32,6 @@ class CreateComicTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('comic');
+        Schema::dropIfExists('comics');
     }
 }
