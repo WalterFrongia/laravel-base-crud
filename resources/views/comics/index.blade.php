@@ -1,5 +1,8 @@
 @extends('layouts.main')
 
 @section('comics')
-    <h1>comics</h1>
+    @foreach($comics as $comic)
+        <img src="{{$comic->url_img}}" alt="{{$comic->name}}">
+        <h3>{{$comic->title}}</h3>
+    @endforeach
 @endsection
