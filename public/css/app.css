@@ -44,6 +44,24 @@ header #nav-bar #navbar-search {
   width: 100%;
 }
 
+#show-wrapper {
+  margin: auto;
+  width: 80%;
+}
+#show-wrapper img {
+  height: 500px;
+  width: 400px;
+}
+#show-wrapper #comic-container {
+  display: flex;
+}
+#show-wrapper #comic-container h3 {
+  padding: 0 10px;
+}
+#show-wrapper #comic-container p {
+  padding: 30px 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
