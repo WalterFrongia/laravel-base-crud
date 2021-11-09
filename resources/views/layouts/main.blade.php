@@ -8,6 +8,8 @@
     <title>Document</title>
 </head>
 <body>
+
     @yield('comics')
+
 </body>
 </html>
