@@ -15,6 +15,8 @@
                 <p>DATE: {{$comic->sale_date}}</p>
             </div>
         </div>
+
+        <a href="{{ route('comic.edit' ,  $comic->id)}}"><button>EDIT COMIC</button></a>
     </div>
 
 @endsection
