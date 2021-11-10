@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comic;
+use Illuminate\Http\Request;
 
 class ComicController extends Controller
 {
@@ -36,7 +37,14 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //Arrivano i dati e si salvano nel db
+        $comic = Comic::create($request->all());
+        // dd($request->all());
+
+        //per salvare nel db
+        $comic -> save(); 
+        //apro la pagina index
+        return redirect()->route('comic.index');
     }
 
     /**
@@ -60,7 +68,8 @@ class ComicController extends Controller
      */
     public function edit($id)
     {
-        //
+        //return di edit come in create
+        return view('comic.edit');
     }
 
     /**

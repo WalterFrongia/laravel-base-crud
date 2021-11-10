@@ -4,10 +4,11 @@
 
     <div id="nav-bar">
 
-        <form action="">
+        <form action="" method="GET">
             <input type="search" id="navbar-search" placeholder="search comic">
-            <input class="button" type="button" value="ADD COMIC">
         </form>
+        <a class="button" href="{{ route('comic.create')}}">ADD COMIC</a>
+        
     </div>
 
 </header>
